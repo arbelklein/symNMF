@@ -25,11 +25,11 @@ The algorithm iteratively updates H until convergence based on a defined criteri
 ## Usage
 ### Building everything
 To build the Python extension module:
-```
+```sh
 python3 setup.py build_ext --inplace
 ```
 To compile the C program:
-```
+```sh
 make
 ```
 
@@ -42,20 +42,20 @@ This program accepts command-line arguments to compute specific outputs:
    - `ddg`: Compute and output the diagonal degree matrix.
    - `norm`: Compute and output the normalized similarity matrix.
    - `file_name`: Path to the input file containing data points.
-```
+```sh
 python3 symnmf.py <k> <goal> input.txt
 ```
 
 ### C Program (`symnmf.c`)
 The C implementation supports:
 - Computing the similarity matrix, diagonal degree matrix, or normalized similarity matrix based on the goal provided as a command-line argument.
-```
+```sh
 ./symnmf sym input.txt
 ```
 
 ### Analysis Script (`analysis.py`)
 Compares SymNMF and K-means clustering using silhouette scores. Takes the number of clusters and input file as arguments.
-```
+```sh
 python3 analysis.py <#clusters> input.txt
 ```
 
@@ -63,7 +63,7 @@ python3 analysis.py <#clusters> input.txt
 All matrix outputs are comma-separated, with each row on a new line. Values are formatted to four decimal places.
 
 Example output:
-```
+```sh
 0.0600,0.0100
 0.0100,0.0500
 0.0100,0.0400
