@@ -56,7 +56,7 @@ The C implementation supports:
 ### Analysis Script (`analysis.py`)
 Compares SymNMF and K-means clustering using silhouette scores. Takes the number of clusters and input file as arguments.
 ```sh
-python3 analysis.py <#clusters> input.txt
+python3 analysis.py <number of clusters> input.txt
 ```
 
 ## Output
